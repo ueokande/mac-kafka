@@ -10,4 +10,4 @@ script:
   - curl -sSL -o /tmp/kafka_2.11-1.1.0.tgz http://www-eu.apache.org/dist/kafka/1.1.0/kafka_2.11-1.1.0.tgz
   - sudo tar -xf /tmp/kafka_2.11-1.1.0.tgz -C /usr/local/
   - sudo /usr/local/kafka_2.11-1.1.0/bin/zookeeper-server-start.sh -daemon /usr/local/kafka_2.11-1.1.0/config/zookeeper.properties
-  - sudo /usr/local/kafka_2.11-1.1.0/bin/kafka-server-start.sh /usr/local/etc/kafka_2.11-1.1.0/server.properties
+  - sudo /usr/local/kafka_2.11-1.1.0/bin/kafka-server-start.sh /usr/local/kafka_2.11-1.1.0/config/server.properties
