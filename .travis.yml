@@ -2,3 +2,5 @@ os:
   - osx
 script:
   - uname
+  - brew install kafka
+  - ls /usr/local/Cellar/kafka
