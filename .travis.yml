@@ -3,8 +3,6 @@ os:
 script:
   - uname
   - brew install kafka
-  - ls /usr/local/Cellar/kafka
-  - ls /usr/local/bin
-  - ls /usr/local/etc/kafka
-  - ls /usr/local/etc/zookeeper
-  - ls /usr/local/var/lib/kafka-logs
+  - cat /usr/local/etc/kafka/server.properties
+  - /usr/local/bin/zkServer start
+  - kafka-server-start.sh /usr/local/etc/kafka/server.propertie
