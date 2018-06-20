@@ -6,3 +6,5 @@ script:
   - cat /usr/local/etc/kafka/server.properties
   - /usr/local/bin/zkServer start
   - /usr/local/bin/kafka-server-start /usr/local/etc/kafka/server.propertie
+  - find /etc -name server.properties
+  - find /usr/local -name server.properties
