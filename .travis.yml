@@ -4,7 +4,5 @@ script:
   - uname
   - brew install kafka
   - cat /usr/local/etc/kafka/server.properties
-  - find /etc -name server.properties
-  - find /usr/local -name server.properties
   - /usr/local/bin/zkServer start
-  - /usr/local/bin/kafka-server-start /usr/local/etc/kafka/server.propertie
+  - /usr/local/bin/kafka-server-start /usr/local/etc/kafka/server.properties
